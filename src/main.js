@@ -41,6 +41,11 @@ export function copy(options){
         case "A simple app with express and routers":
             temp="apiwithrouters"
             break
+        case "An app with middlewares and routers":
+            temp="apiwithmiddleware"
+            break
+        case "A React app with hooks and routers":
+            temp="hooks"
         default:
             break
     }

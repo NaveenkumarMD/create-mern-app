@@ -57,7 +57,7 @@ async function promptformissingargs(options) {
             message:"Choose the template you wish to install",
             choices:[
                 "A clean react app with classes",
-                "A React app with hooks",
+                "A React app with hooks and routers",
                 "A React app with classes and redux",
                 "A React app with hooks and context api",
                 "A react app with hooks and redux without synchronous actions",
@@ -74,7 +74,8 @@ async function promptformissingargs(options) {
             type:"list",
             choices:[
                 "A simple express api",
-                "A simple app with express and routers"
+                "A simple app with express and routers",
+                "An app with middlewares and routers"
             ],
             default:"A simple express api"
         })

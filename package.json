@@ -2,20 +2,30 @@
   "name": "create-mern-apps",
   "version": "1.0.0",
   "description": "A simple cli tool used to initialize node and react projects along with redux",
-  
   "main": "src/index.js",
   "bin": {
     "test": "bin/runproject"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NaveenkumarMD/Master-methods.git"
+    "url": "https://github.com/NaveenkumarMD/create-mern-app.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "cli","react","react-redux","redux","express","nodejs","node","nodemon","routers","create-react-app","create-mern-app","mern"
+    "cli",
+    "react",
+    "react-redux",
+    "redux",
+    "express",
+    "nodejs",
+    "node",
+    "nodemon",
+    "routers",
+    "create-react-app",
+    "create-mern-app",
+    "mern"
   ],
   "author": "",
   "license": "MIT",
@@ -30,6 +40,7 @@
     "inquirer": "^8.1.0",
     "listr": "^0.14.3",
     "ncp": "^2.0.0",
-    "pkg-install": "^1.0.0"
+    "pkg-install": "^1.0.0",
+    "react-router-dom": "^5.2.0"
   }
 }
