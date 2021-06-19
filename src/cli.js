@@ -63,6 +63,7 @@ async function promptformissingargs(options) {
                 "A react app with hooks and redux without synchronous actions",
                 "A react app with redux-thunk",
                 "A react app with redux-saga",
+                "A react app with redux thunk and synchronous actions and routers"
             ],
             default:"A clean react app with classes",
         })

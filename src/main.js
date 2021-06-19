@@ -46,6 +46,8 @@ export function copy(options){
             break
         case "A React app with hooks and routers":
             temp="hooks"
+        case "A react app with redux thunk and synchronous actions and routers":
+            temp="reduxthunk"
         default:
             break
     }
