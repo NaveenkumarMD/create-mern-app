@@ -1,6 +1,6 @@
 {
   "name": "create-mern-apps",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple cli tool used to initialize node and react projects along with redux",
   "main": "src/index.js",
   "bin": {
@@ -11,7 +11,6 @@
     "type": "git",
     "url": "https://github.com/NaveenkumarMD/create-mern-app.git"
   },
-
   "keywords": [
     "cli",
     "react",
