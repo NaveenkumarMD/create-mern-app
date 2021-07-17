@@ -48,6 +48,8 @@ export function copy(options){
             temp="hooks"
         case "A react app with redux thunk and synchronous actions and routers":
             temp="reduxthunk"
+        case "A react app with redux thuk and persisited store":
+            temp="reactpersist"
         default:
             break
     }

@@ -7,7 +7,7 @@ function Main(props) {
     console.log(store)
     const dispatch=useDispatch()
     return (
-        <div >
+        <div style={{textAlign:"center"}}>
             <h1>
                 Naveenkumar
             </h1>

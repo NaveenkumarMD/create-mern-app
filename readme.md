@@ -11,6 +11,6 @@ Frontend represents the react projects.
 Backend represents the express projects
 
 # Examples:
-![Image 1]("https://github.com/NaveenkumarMD/create-mern-app/blob/master/assets/1.PNG")
-![Image 1]("https://github.com/NaveenkumarMD/create-mern-app/blob/master/assets/2.PNG")
-![Image 1]("https://github.com/NaveenkumarMD/create-mern-app/blob/master/assets/3.PNG")
+![Image 1]("https://github.com/NaveenkumarMD/create-mern-app/blob/master/assets/1.PNG?raw=true")
+![Image 1]("https://github.com/NaveenkumarMD/create-mern-app/blob/master/assets/2.PNG?raw=true")
+![Image 1]("https://github.com/NaveenkumarMD/create-mern-app/blob/master/assets/3.PNG?raw=true")
