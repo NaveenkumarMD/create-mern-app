@@ -1,6 +1,6 @@
 {
   "name": "create-mern-apps",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A simple cli tool used to initialize node and react projects along with redux",
   "main": "src/index.js",
   "bin": {
