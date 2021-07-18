@@ -2,6 +2,7 @@ import ncp from 'ncp'
 import {projectInstall} from 'pkg-install'
 import chalk from 'chalk'
 import path, { basename } from 'path'
+const exec = require('child_process').exec;
 import Listr from 'listr'
 import execa from 'execa'
 import figlet from 'figlet'
@@ -29,6 +30,8 @@ export function copy(options){
     const currentfileurl=import.meta.url
     var temp=""
     switch (options.template){
+        case "A fullstack app with react and express along with mongodb":
+            temp="fullstackmongodb"
         case "A clean react app with classes":
             temp="classes"
             break;
@@ -79,11 +82,20 @@ export function copy(options){
             enabled:()=>options.git
         },
         {
+            title:"Upgrading dependancies",
+            task:async ()=>{
+                let installProcess = exec('npm update');
+                    installProcess.stdout.pipe(process.stdout);
+                    installProcess.stderr.pipe(process.stderr);
+            }
+        },
+        {
             title:"Installing dependancies",
             task:()=>projectInstall({
                 cwd:options.targetDir
             })
         }
+
     ])
     tasks.run().then(()=>{
         console.log(chalk.green("\nProject sucessfully initialized\n"))

@@ -1,11 +1,13 @@
 # Create-mern-apps
-A cli tool to bootstrap express projects and react projects along with redux. 
+A cli tool to bootstrap mern,express projects and react projects along with redux. 
 # Usage
 ## Installation
      npm i create-mern-apps -g
 -g Install it globally to avail for the whole system.
 ## creating a app
-    create <project-name> [-g||--git] [-f||--frontend] [-b||--backend]
+    create <project-name> [-g||--git] [-f||--frontend] [-b||--backend] [-fs ||--fullstack]
+    or
+    create-mern-apps <project-name> [--git||-g] [--frontend ||-f ] [--backend|| -b] [--fullstack |-fs]
 Frontend represents the react projects.
 
 Backend represents the express projects

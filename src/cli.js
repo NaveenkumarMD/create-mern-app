@@ -9,6 +9,8 @@ function parsearguments(args) {
             "--git": Boolean,
             "--frontend":Boolean,
             "--backend":Boolean,
+            "--fullstack":Boolean,
+            "-fs":"--fullstack",
             "-b":"--backend",
             "-g": "--git",
             "-f":"--frontend"
@@ -21,7 +23,8 @@ function parsearguments(args) {
         name: options._[0],
         git: options["--git"] || false,
         frontend:options["--frontend"]|| false,
-        backend:options["--backend"] || false
+        backend:options["--backend"] || false,
+        fullstack:options["--fullstack"] || false,
     }
 }
 async function promptformissingargs(options) {
@@ -29,9 +32,9 @@ async function promptformissingargs(options) {
     if(!options.frontend && !options.backend){
         questions.push({
             name:"frontend_or_backend",
-            message:"Choose frontend or backend",
+            message:"Choose frontend or backend or fullstack",
             type:"list",
-            choices:["frontend","backend"],
+            choices:["frontend","backend","fullstack"],
             
         })
     }
@@ -46,9 +49,23 @@ async function promptformissingargs(options) {
     const tempquestions=[]
     console.log(answers)
     console.log(options)
-    if(options.frontend && options.backend){
+    if(options.frontend && options.backend && options.fullstack ||
+        options.frontend && options.backend ||
+        options.backend && options.fullstack ||
+        options.fullstack && options.frontend
+        ){
         console.log(chalk.red.bold("ERROR")+" Choose backend or frontend can't do both")
         return process.exit(1)
+    }
+    if(answers.frontend_or_backend=="fullstack" || options.fullstack){
+        tempquestions.push({
+           name:"template",
+           type:"list",
+           message:"choose the template you wish to install",
+           choices:[
+               "A fullstack app with react and express along with mongodb"
+           ] 
+        })
     }
     if(answers.frontend_or_backend=="frontend" || options.frontend){
         tempquestions.push({
