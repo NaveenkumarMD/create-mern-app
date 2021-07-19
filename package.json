@@ -31,18 +31,12 @@
     "arg": "^5.0.0",
     "args": "^5.0.1",
     "chalk": "^4.1.1",
-    "create-react-app": "^4.0.3",
     "esm": "^3.2.25",
     "execa": "^5.1.1",
     "figlet": "^1.5.0",
     "inquirer": "^8.1.0",
     "listr": "^0.14.3",
     "ncp": "^2.0.0",
-    "pkg-install": "^1.0.0",
-    "react-redux": "^7.2.4",
-    "react-router-dom": "^5.2.0",
-    "redux": "^4.1.0",
-    "redux-persist": "^6.0.0",
-    "redux-thunk": "^2.3.0"
+    "pkg-install": "^1.0.0"
   }
 }

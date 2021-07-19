@@ -109,7 +109,7 @@ async function promptformissingargs(options) {
 
 }
 export async function cli(args) {
-    await figlet("Naveenkumar MD",async(err,data)=>{
+    await figlet("Create MERN Apps",async(err,data)=>{
         if(err){
           console.log(err)  
         }
